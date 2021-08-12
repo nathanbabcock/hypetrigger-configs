@@ -7,7 +7,7 @@
       "id": "warzone-kill",
       "title": "On Kill",
       "enabled": true,
-      "debug": true,
+      "debug": false,
       "crop": {
         "y": 17,
         "yUnit": "%",
