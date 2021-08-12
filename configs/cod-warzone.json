@@ -1,0 +1,69 @@
+{
+  "id": "cod-warzone",
+  "title": "COD Warzone",
+  "exe": "ModernWarfare.exe",
+  "triggers": [
+    {
+      "id": "warzone-kill",
+      "title": "On Kill",
+      "enabled": true,
+      "debug": true,
+      "crop": {
+        "y": 17,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 47.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 5.104166666666667,
+        "widthUnit": "%",
+        "height": 3.6111111111111107,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{3}"
+      }
+    },
+    {
+      "id": "warzone-victory",
+      "title": "On Warzone Victory",
+      "enabled": true,
+      "debug": false,
+      "crop": {
+        "y": 78.47222222222221,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 56.0546875,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 22.65625,
+        "widthUnit": "%",
+        "height": 9.51388888888889,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 85,
+          "g": 200,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "parser": {
+        "type": "regex",
+        "regex": "[Vv][1iIlL][cC][Tt][oO0][rR][yY]"
+      }
+    }
+  ]
+}
