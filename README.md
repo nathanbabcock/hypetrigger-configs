@@ -8,9 +8,19 @@ By adding your own `.json` files to this folder, you can add new games. All `.js
 
 **If you come up with a config that you think would be useful to others, open a pull request on this repo.**
 
+## Config file location
+
+When you [download](https://hypetrigger.io/clipit#download) Clip It from the website, the config files are located inside the extracted folder:
+
+```
+[extracted clip it folder]/resources/app/public/clipit-configs/configs
+```
+
+In fact, the parent folder is an exact copy of this repo, including this README. If you make local changes or add configs from directly inside the Clip It folder, you can configure this repo as a remote and open a pull request for changes. Or, you can clone this repo separately and copy/paste your modified config `.json` files into it. Either way, new configs which have been approved and merged to `main` will be automatically included in subsequent releases of Clip It.
+
 ## Config file format
 
-We'll walk through one of the official config files in detail, specifically `cod-warzone.json`. Follow along with the real `cod-warzone.json` if it's helpful.
+We'll walk through one of the official config files in detail, specifically `cod-warzone.json`. Follow along with [the real `configs/cod-warzone.json`](configs/cod-warzone.json) if it's helpful.
 
 Starting from the top is some basic metadata:
 
