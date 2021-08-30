@@ -9,15 +9,15 @@
       "enabled": true,
       "debug": false,
       "crop": {
-        "y": 17,
+        "y": 18,
         "yUnit": "%",
         "yAnchor": "bottom",
-        "x": 47.5,
+        "x": 46.5,
         "xUnit": "%",
         "xAnchor": "left",
-        "width": 5.104166666666667,
+        "width": 7.104166666666667,
         "widthUnit": "%",
-        "height": 3.6111111111111107,
+        "height": 5.6111111111111107,
         "heightUnit": "%"
       },
       "filters": [
@@ -26,7 +26,7 @@
           "r": 255,
           "g": 0,
           "b": 0,
-          "threshold": 42
+          "threshold": 60
         }
       ],
       "parser": {
