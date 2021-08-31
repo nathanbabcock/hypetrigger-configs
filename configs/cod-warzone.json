@@ -26,7 +26,7 @@
           "r": 255,
           "g": 0,
           "b": 0,
-          "threshold": 60
+          "threshold": 42
         }
       ],
       "parser": {
