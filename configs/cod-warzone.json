@@ -8,7 +8,7 @@
       "title": "On Kill",
       "enabled": true,
       "debug": false,
-      "crop": {
+      "cropFunction": {
         "y": 18,
         "yUnit": "%",
         "yAnchor": "bottom",
@@ -39,7 +39,7 @@
       "title": "On Warzone Victory",
       "enabled": true,
       "debug": false,
-      "crop": {
+      "cropFunction": {
         "y": 78.47222222222221,
         "yUnit": "%",
         "yAnchor": "top",

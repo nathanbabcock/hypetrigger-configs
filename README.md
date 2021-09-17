@@ -83,7 +83,7 @@ Look at the first trigger in the `cod-warzone.json` config:
     "debug": false,
 
     // Now, the CROP part
-    "crop": {
+    "cropFunction": {
       
       // The y-coordinate...
       "y": 17,

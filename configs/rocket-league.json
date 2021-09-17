@@ -8,7 +8,7 @@
       "title": "On Goal",
       "enabled": true,
       "debug": false,
-      "crop": {
+      "cropFunction": {
         "y": 18.61111111111111,
         "yUnit": "%",
         "yAnchor": "top",
