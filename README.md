@@ -52,7 +52,7 @@ Triggers are the data sources that the app will use to determine when to record 
 
 - **CROP**: the area of the screen to capture
 - **FILTER**: pre-processing applied to the image to make it easier to process
-- **RECOGNIZE**: run the filtered image through OCR or other image analysis methods
+- **AI**: run the filtered image through OCR or other image analysis methods
 - **PARSE**: If any text is recognized from the image, parse it (e.g. with a regex) to see if it matches an expected value
 
 Look at the first trigger in the `cod-warzone.json` config:
@@ -135,8 +135,33 @@ Look at the first trigger in the `cod-warzone.json` config:
       }
     ],
 
-    // The RECOGNIZE part is assumed to be OCR
-    // No config section is needed for it
+    // The AI part can be OCR or Image Averaging
+    "ai": {
+      // for OCR, the only config needed here is this:
+      // "type": "ocr"
+
+      // Instead, we'll look at Image Averaging:
+      "type": "image-average",
+
+      // "classifiers" is a list of template images to compare to
+      // They can be created in the Test Suite (`npm run test-suite`)
+      "classifiers": [
+        {
+          // the path to the template image to compare to
+          "image": "../public/warzone-kill-average-solid.png",
+
+          // "loss" is the average difference from the template image
+          // It's a percentage, expressed between 0-100
+          "maxLoss": 32
+        },
+        {
+          "image": "../public/warzone-kill-average-hollow.png",
+          "maxLoss": 55
+        }
+        // There can be any number of classifiers.
+        // If any match, the trigger returns TRUE
+      ]
+    }
 
     // Finally, the PARSE part
     "parser": {

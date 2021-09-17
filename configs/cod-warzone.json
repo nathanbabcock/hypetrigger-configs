@@ -29,9 +29,18 @@
           "threshold": 42
         }
       ],
-      "parser": {
-        "type": "regex",
-        "regex": "[kK][1iIlL]{3}"
+      "ai": {
+        "type": "image-average",
+        "classifiers": [
+          {
+            "image": "../public/warzone-kill-average-solid.png",
+            "maxLoss": 32
+          },
+          {
+            "image": "../public/warzone-kill-average-hollow.png",
+            "maxLoss": 55
+          }
+        ]
       }
     },
     {
@@ -60,9 +69,14 @@
           "threshold": 42
         }
       ],
-      "parser": {
-        "type": "regex",
-        "regex": "[Vv][1iIlL][cC][Tt][oO0][rR][yY]"
+      "ai": {
+        "type": "image-average",
+        "classifiers": [
+          {
+            "image": "../public/warzone-victory-average-english.png",
+            "maxLoss": 50
+          }
+        ]
       }
     }
   ]

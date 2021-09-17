@@ -29,6 +29,9 @@
           "threshold": 42
         }
       ],
+      "ai": {
+        "type": "ocr"
+      },
       "parser": {
         "type": "regex",
         "regex": "GOAL"
