@@ -33,11 +33,11 @@
         "type": "image-average",
         "classifiers": [
           {
-            "image": "../public/warzone-kill-average-solid.png",
+            "image": "../public/image-average/warzone-kill-average-solid.png",
             "maxLoss": 32
           },
           {
-            "image": "../public/warzone-kill-average-hollow.png",
+            "image": "../public/image-average/warzone-kill-average-hollow.png",
             "maxLoss": 55
           }
         ]
@@ -73,7 +73,7 @@
         "type": "image-average",
         "classifiers": [
           {
-            "image": "../public/warzone-victory-average-english.png",
+            "image": "../public/image-average/warzone-victory-average-english.png",
             "maxLoss": 50
           }
         ]

@@ -148,14 +148,14 @@ Look at the first trigger in the `cod-warzone.json` config:
       "classifiers": [
         {
           // the path to the template image to compare to
-          "image": "../public/warzone-kill-average-solid.png",
+          "image": "../public/image-average/warzone-kill-average-solid.png",
 
           // "loss" is the average difference from the template image
           // It's a percentage, expressed between 0-100
           "maxLoss": 32
         },
         {
-          "image": "../public/warzone-kill-average-hollow.png",
+          "image": "../public/image-average/warzone-kill-average-hollow.png",
           "maxLoss": 55
         }
         // There can be any number of classifiers.
