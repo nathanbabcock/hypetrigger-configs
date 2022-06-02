@@ -1,8 +1,8 @@
-# Clip It Custom Trigger Configs
+# Hypetrigger Custom Trigger Configs
 
-**Companion repo to [Clip It](https://hypetrigger.io/clipit), providing extensibility and modding support.**
+**Companion repo to [Hypetrigger](https://hypetrigger.io), providing extensibility and modding support.**
 
-The JSON files in `./configs` define games supported by [Clip It](https://hypetrigger.io/clipit), and the triggers that are available for them.
+The JSON files in `./configs` define games supported by [Hypetrigger](https://hypetrigger.io), and the triggers that are available for them.
 
 By adding your own `.json` files to this folder, you can add new games. All `.json` files found there will be automatically loaded at app startup.
 
@@ -10,13 +10,13 @@ By adding your own `.json` files to this folder, you can add new games. All `.js
 
 ## Config file location
 
-When you [download](https://hypetrigger.io/clipit#download) Clip It from the website, the config files are located inside the extracted folder:
+When you [download](https://hypetrigger.io/#download) Hypetrigger from the website, the config files are located inside the extracted folder:
 
 ```txt
-[extracted clip it folder]/resources/app/dist/public/clipit-configs/configs
+%Program Files%/Hypetrigger/configs
 ```
 
-In fact, the parent folder is an exact copy of this repo, including this README. If you make local changes or add configs from directly inside the Clip It folder, you can configure this repo as a remote and open a pull request for changes. Or, you can clone this repo separately and copy/paste your modified config `.json` files into it. Either way, new configs which have been approved and merged to `main` will be automatically included in subsequent releases of Clip It.
+In fact, the parent folder is an exact copy of this repo, including this README. If you make local changes or add configs from directly inside the Hypetrigger folder, you can configure this repo as a remote and open a pull request for changes. Or, you can clone this repo separately and copy/paste your modified config `.json` files into it. Either way, new configs which have been approved and merged to `main` will be automatically included in subsequent releases of Hypetrigger.
 
 ## Config file format
 
