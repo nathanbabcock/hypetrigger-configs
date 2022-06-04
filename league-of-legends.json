@@ -1,0 +1,79 @@
+{
+  "id": "league-of-legends",
+  "title": "League of Legends",
+  "exe": "League of Legends.exe",
+  "triggers": [
+    {
+      "id": "league-kill",
+      "title": "Kill",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 10,
+      "secondsAfter": 3,
+      "cropFunction": {
+        "y": 10.092593,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 42.5521,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 14.7917,
+        "widthUnit": "%",
+        "height": 3.055556,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[Yy][oO0][uU]\\s*[hH][aA4][vV][eE]\\s*[s$S][lLiI1][aA4][lLiI1][nN]"
+      }
+    },
+    {
+      "id": "league-death",
+      "title": "Death",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 10,
+      "secondsAfter": 3,
+      "cropFunction": {
+        "y": 16.203704,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 44.166667,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 11.5625,
+        "widthUnit": "%",
+        "height": 2.407407,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[Yy][oO0][uU]\\s*[hH][aA4][vV][eE]\\s*[bB][eE]{2}[nN]\\s*[s$S][lLiI1][aA4][lLiI1][nN]"
+      }
+    }
+  ]
+}

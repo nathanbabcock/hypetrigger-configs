@@ -1,0 +1,117 @@
+{
+  "id": "apex-legends",
+  "title": "Apex Legends",
+  "exe": "r5apex.exe",
+  "triggers": [
+    {
+      "id": "apex-kill",
+      "title": "Elimination",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 5,
+      "secondsAfter": 3,
+      "cropFunction": {
+        "y": 70,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 40,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 15,
+        "widthUnit": "%",
+        "height": 4,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[Ee][L1lIi]{2}[Mm][L1lIi][Nn][Aa][Tt](([L1lIi][oO0][nN])|([eE][dD]))"
+      }
+    },
+    {
+      "title": "Knock Down",
+      "id": "apex-knock",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 3,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 40,
+        "y": 70,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 13,
+        "height": 4,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Knocked Down"
+      }
+    },
+    {
+      "id": "apex-win",
+      "title": "Champion",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 20,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "y": 11.5,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 42.8646,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 14.4271,
+        "widthUnit": "%",
+        "height": 4.3519,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[cC][hH][aA][mM][pP][LliI1][oO0][nN]"
+      }
+    }
+  ]
+}

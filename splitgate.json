@@ -1,0 +1,82 @@
+{
+  "id": "splitgate",
+  "title": "Splitgate",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "splitgate-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 40,
+        "y": 66,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 20,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "KILL"
+      }
+    },
+    {
+      "title": "Victory",
+      "id": "splitgate-victory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 20,
+      "secondsAfter": 8,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 28,
+        "y": 38,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 46,
+        "height": 22,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "VICTORY"
+      }
+    }
+  ]
+}

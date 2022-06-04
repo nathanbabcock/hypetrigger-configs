@@ -1,0 +1,120 @@
+{
+  "id": "pubg",
+  "title": "PUBG: BATTLEGROUNDS",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "pubg-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46,
+        "y": 70,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 4,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "K[iIlL]{2,3}S"
+      }
+    },
+    {
+      "title": "Chicken Dinner",
+      "id": "pubg-win",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 7.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 2,
+        "y": 12,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 52,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "WINNER! WINNER! CHICKEN DINNER!"
+      }
+    },
+    {
+      "title": "Knock",
+      "id": "pubg-knock",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 7.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 34.00000000000001,
+        "y": 65,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 15,
+        "height": 6,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "YOU"
+      }
+    }
+  ]
+}

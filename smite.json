@@ -1,0 +1,44 @@
+{
+  "id": "smite",
+  "title": "Smite",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "smite-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 7,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[KV][IL1]{3}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "knockout-city",
+  "title": "Knockout City",
+  "triggers": [
+    {
+      "title": "Knockout",
+      "id": "single-ko",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 7,
+        "y": 4,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 9,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[KV][O0]"
+      }
+    }
+  ]
+}

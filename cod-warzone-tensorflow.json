@@ -1,0 +1,40 @@
+{
+  "id": "cod-warzone-tensorflow",
+  "title": "Call of Duty: Warzone (tensorflow beta)",
+  "exe": "ModernWarfare.exe",
+  "triggers": [
+    {
+      "id": "warzone-kill-tf",
+      "title": "On Kill",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "y": 82,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 47.24652777777,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 5.6111111111111107,
+        "widthUnit": "%",
+        "height": 5.6111111111111107,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "tensorflow",
+        "modelDir": "data\\tensorflow-models\\warzone-kill"
+      }
+    }
+  ]
+}

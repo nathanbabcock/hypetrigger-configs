@@ -1,0 +1,538 @@
+{
+  "id": "valorant",
+  "title": "Valorant",
+  "triggers": [
+    {
+      "title": "ace",
+      "id": "valorant-ace",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46,
+        "y": 16,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 18
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "A[CG]E"
+      }
+    },
+    {
+      "title": "clutch",
+      "id": "valorant-clutch",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 43,
+        "y": 14.000000000000002,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 14,
+        "height": 11.000000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 22
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[CG]LUT[CG]H"
+      }
+    },
+    {
+      "title": "flawless",
+      "id": "valorant-flawless",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 43,
+        "y": 16,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 14,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 8
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "FLAWLESS"
+      }
+    },
+    {
+      "title": "headshot",
+      "id": "valorant-headshot",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 87,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 37
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[MH]EADSHO[TY]"
+      }
+    },
+    {
+      "title": "won",
+      "id": "valorant-won",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46,
+        "y": 14.000000000000002,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 18
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "WON"
+      }
+    },
+    {
+      "title": "lost",
+      "id": "valorant-lost",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45,
+        "y": 14.000000000000002,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 18
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[1L][0O]ST"
+      }
+    },
+    {
+      "title": "team ace",
+      "id": "valorant-team-ace",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 40,
+        "y": 21,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 20,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 8
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TEAM\\s?ACE"
+      }
+    },
+    {
+      "title": "thrifty",
+      "id": "valorant-thrifty",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 40,
+        "y": 21,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 21,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 5
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "THRIFTY"
+      }
+    },
+    {
+      "title": "single kill (deathmatch)",
+      "id": "valorant-single-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 92,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.000000000000001,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "SINGLE"
+      }
+    },
+    {
+      "title": "double kill (deathmatch)",
+      "id": "valorant-double-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 92,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.000000000000001,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 20
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[DO][DO]UBLE"
+      }
+    },
+    {
+      "title": "triple kill (deathmatch)",
+      "id": "valorant-triple-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 92,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.000000000000001,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TRIPLE"
+      }
+    },
+    {
+      "title": "quadrakill (deathmatch)",
+      "id": "valorant-quadrakill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 92,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.000000000000001,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[COQ]UADRA"
+      }
+    },
+    {
+      "title": "pentakill (deathmatch)",
+      "id": "valorant-pentakill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 92,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.000000000000001,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "PENTA"
+      }
+    },
+    {
+      "title": "overkill (deathmatch)",
+      "id": "valorant-overkill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 92,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.000000000000001,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[BDO]VER"
+      }
+    }
+  ]
+}

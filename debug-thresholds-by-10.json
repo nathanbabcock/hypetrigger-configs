@@ -1,0 +1,338 @@
+{
+  "id": "debug-thresholds-by-10",
+  "title": "Debug Thresholds by 10",
+  "triggers": [
+    {
+      "id": "warzone-kill-10",
+      "title": "Threshold 10",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 10
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-kill-20",
+      "title": "Threshold 20",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 20
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-kill-30",
+      "title": "Threshold 30",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 30
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-kill-40",
+      "title": "Threshold 40",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 40
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-kill-50",
+      "title": "Threshold 50",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 50
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-kill-60",
+      "title": "Threshold 60",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 60
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-kill-70",
+      "title": "Threshold 70",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 70
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-kill-80",
+      "title": "Threshold 80",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 80
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-kill-otsu",
+      "title": "Threshold Otsu",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "otsu"
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-kill-nofilter",
+      "title": "Threshold Nofilter",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 18,
+        "yUnit": "%",
+        "yAnchor": "bottom",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.5,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "none"
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    }
+  ]
+}

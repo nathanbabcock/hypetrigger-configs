@@ -1,0 +1,117 @@
+{
+  "id": "cod-warzone",
+  "title": "Call of Duty: Warzone",
+  "exe": "ModernWarfare.exe",
+  "triggers": [
+    {
+      "id": "warzone-kill",
+      "title": "On Kill",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "y": 82,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.6111111111111107,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "id": "warzone-death",
+      "title": "On Death",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "y": 82,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 46.5,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 7.104166666666667,
+        "widthUnit": "%",
+        "height": 5.6111111111111107,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "title": "On Warzone Victory",
+      "id": "warzone-victory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 56.0546875,
+        "y": 78.47222222222223,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 22.65625,
+        "height": 9.513888888888891,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 85,
+          "g": 200,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[UV][IL1]CTORY"
+      }
+    }
+  ]
+}

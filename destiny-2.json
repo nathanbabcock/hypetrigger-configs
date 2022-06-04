@@ -1,0 +1,120 @@
+{
+  "id": "destiny-2",
+  "title": "Destiny 2",
+  "triggers": [
+    {
+      "title": "enemy defeated",
+      "id": "destiny-2-defeated",
+      "debug": true,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 28,
+        "y": 53.00000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 15,
+        "height": 15,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 35
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Defeated"
+      }
+    },
+    {
+      "title": "victory",
+      "id": "destiny-2-victory",
+      "debug": true,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45,
+        "y": 64,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 4,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 20
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "VICTORY"
+      }
+    },
+    {
+      "title": "defeat",
+      "id": "destiny-2-defeat",
+      "debug": true,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45,
+        "y": 64,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 4,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 20
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DEFEAT"
+      }
+    }
+  ]
+}

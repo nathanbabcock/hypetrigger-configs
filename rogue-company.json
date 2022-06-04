@@ -1,0 +1,82 @@
+{
+  "id": "rogue-company",
+  "title": "Rogue Company",
+  "triggers": [
+    {
+      "title": "Downed",
+      "id": "rogue-downed",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 44.00000000000001,
+        "y": 76.00000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 12.000000000000002,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 70
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[DO0]{2}[WVU]NED?"
+      }
+    },
+    {
+      "title": "Eliminated",
+      "id": "rogue-eliminated",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 44.000000000000014,
+        "y": 76.00000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 12.000000000000002,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 70
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "EL[Il1]M[Il1]NATE[D?]"
+      }
+    }
+  ]
+}

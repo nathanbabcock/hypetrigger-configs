@@ -1,0 +1,196 @@
+{
+  "id": "elden-ring",
+  "title": "Elden Ring",
+  "triggers": [
+    {
+      "title": "you died",
+      "id": "elden-ring-you-died",
+      "debug": true,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 25,
+        "y": 46,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 50,
+        "height": 12,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 100,
+          "g": 0,
+          "b": 0,
+          "threshold": 13
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "YOU DIED"
+      }
+    },
+    {
+      "title": "enemy felled",
+      "id": "elden-ring-enemy-felled",
+      "debug": true,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 25,
+        "y": 46,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 50,
+        "height": 12,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 240,
+          "g": 200,
+          "b": 0,
+          "threshold": 40
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "ENEMY FELLED"
+      }
+    },
+    {
+      "title": "great enemy felled",
+      "id": "elden-ring-great-enemy-felled",
+      "debug": true,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 25,
+        "y": 46,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 50,
+        "height": 12,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 240,
+          "g": 200,
+          "b": 0,
+          "threshold": 40
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "GREAT ENEMY FELLED"
+      }
+    },
+    {
+      "title": "host died",
+      "id": "elden-ring-host-died",
+      "debug": true,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 33,
+        "y": 46,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 33.99999999999999,
+        "height": 12.000000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 225,
+          "g": 200,
+          "b": 0,
+          "threshold": 41
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "HOST DIED"
+      }
+    },
+    {
+      "title": "lost grace discovered",
+      "id": "elden-ring-lost-grace-discovered",
+      "debug": true,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 20,
+        "y": 46,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 61,
+        "height": 12.000000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 240,
+          "g": 200,
+          "b": 0,
+          "threshold": 40
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "LOST GRACE DISCOVERED"
+      }
+    }
+  ]
+}

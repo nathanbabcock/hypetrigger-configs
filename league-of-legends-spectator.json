@@ -1,0 +1,45 @@
+{
+  "id": "league-of-legends-spectator",
+  "title": "League of Legends (Spectator)",
+  "exe": "League of Legends.exe",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "league-spec-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 3,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 22.552099999999996,
+        "y": 19,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 54.7917,
+        "height": 5.055556,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "has slain"
+      }
+    }
+  ]
+}

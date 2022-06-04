@@ -1,0 +1,44 @@
+{
+  "id": "halo-infinite",
+  "title": "Halo Infinite",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "halo-infinite-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 25,
+        "y": 45,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 14,
+        "height": 16,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Kill"
+      }
+    }
+  ]
+}

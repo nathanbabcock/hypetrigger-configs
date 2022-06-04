@@ -1,7 +1,6 @@
 {
-  "id": "cod-warzone",
-  "title": "COD Warzone",
-  "exe": "ModernWarfare.exe",
+  "id": "debug-image-average",
+  "title": "Debug Image Average",
   "triggers": [
     {
       "id": "warzone-kill",
@@ -33,11 +32,11 @@
         "type": "image-average",
         "classifiers": [
           {
-            "image": "../public/image-average/warzone-kill-average-solid.png",
+            "image": "/src/assets/image-average/warzone-kill-average-solid.png",
             "maxLoss": 32
           },
           {
-            "image": "../public/image-average/warzone-kill-average-hollow.png",
+            "image": "/src/assets/image-average/warzone-kill-average-hollow.png",
             "maxLoss": 55
           }
         ]

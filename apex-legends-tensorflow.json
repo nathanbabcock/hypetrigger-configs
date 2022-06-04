@@ -1,0 +1,33 @@
+{
+  "id": "apex-legends-tensorflow",
+  "title": "Apex Legends (tensorflow beta)",
+  "exe": "r5apex.exe",
+  "triggers": [
+    {
+      "id": "apex-multi",
+      "title": "Kill/Knock/Assist",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 5,
+      "secondsAfter": 3,
+      "matchesRequired": 4,
+      "cropFunction": {
+        "x": "49.21875",
+        "y": "70.619658",
+        "width": "1.682692",
+        "height": "2.991453",
+        "yUnit": "%",
+        "yAnchor": "top",
+        "xUnit": "%",
+        "xAnchor": "left",
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [],
+      "ai": {
+        "type": "tensorflow",
+        "modelDir": "data\\tensorflow-models\\apex-multi"
+      }
+    }
+  ]
+}

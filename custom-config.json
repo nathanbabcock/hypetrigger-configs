@@ -1,0 +1,40 @@
+{
+  "id": "custom-config",
+  "title": "Custom game config",
+  "triggers": [
+    {
+      "id": "custom-trigger",
+      "title": "New Trigger",
+      "enabled": true,
+      "debug": false,
+      "cropFunction": {
+        "y": 50,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 50,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 10,
+        "widthUnit": "%",
+        "height": 10,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TEXT"
+      }
+    }
+  ]
+}

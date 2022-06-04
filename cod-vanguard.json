@@ -1,0 +1,44 @@
+{
+  "id": "cod-vanguard",
+  "title": "Call Of Duty: Vanguard",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "vanguard-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45,
+        "y": 77,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "K[I1l]{3}"
+      }
+    }
+  ]
+}

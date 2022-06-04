@@ -1,0 +1,120 @@
+{
+  "id": "bloodhunt",
+  "title": "Vampire: The Masquerade - Bloodhunt",
+  "triggers": [
+    {
+      "title": "down",
+      "id": "bloodhunt-down",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 48,
+        "y": 24,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 4,
+        "height": 2,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Downed"
+      }
+    },
+    {
+      "title": "elimination",
+      "id": "bloodhunt-elim",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 23,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "ELIMINATED"
+      }
+    },
+    {
+      "title": "victory",
+      "id": "bloodhunt-victory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 42,
+        "y": 33,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 16,
+        "height": 9,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "VICTORY"
+      }
+    }
+  ]
+}

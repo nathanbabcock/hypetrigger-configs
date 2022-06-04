@@ -1,0 +1,117 @@
+{
+  "id": "fortnite",
+  "title": "Fortnite",
+  "triggers": [
+    {
+      "id": "fortnite-kill",
+      "title": "Kill",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 10,
+      "secondsAfter": 3,
+      "cropFunction": {
+        "y": 68.611111,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 40.96875,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 14.7917,
+        "widthUnit": "%",
+        "height": 2.777778,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[Ee][LliI1Uu]{1,2}[Mm][LliI1][Nn][aA4][Tt][eE][dD]"
+      }
+    },
+    {
+      "id": "fortnite-death",
+      "title": "Death",
+      "enabled": true,
+      "debug": false,
+      "secondsBefore": 10,
+      "secondsAfter": 3,
+      "cropFunction": {
+        "y": 82.5,
+        "yUnit": "%",
+        "yAnchor": "top",
+        "x": 45,
+        "xUnit": "%",
+        "xAnchor": "left",
+        "width": 15.208333,
+        "widthUnit": "%",
+        "height": 4.259259,
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[Ee][LliI1]{2}[Mm][LliI1][Nn][aA4][Tt][eE][dD]"
+      }
+    },
+    {
+      "title": "Victory Royale",
+      "id": "fortnite-victory",
+      "effects": [],
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 20,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 41,
+        "y": 3,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 20,
+        "height": 24,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 25
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "([vVyY][iIl1][cC][tT][o0O][rR][yYvV]|[rR][o0O][vVyY][aA][lL][eE])"
+      }
+    }
+  ]
+}

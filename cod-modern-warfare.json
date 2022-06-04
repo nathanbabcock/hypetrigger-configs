@@ -1,0 +1,120 @@
+{
+  "id": "cod-modern-warfare",
+  "title": "Call Of Duty: Modern Warfare",
+  "triggers": [
+    {
+      "title": "Insertion",
+      "id": "mw-insertion",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 1,
+      "secondsAfter": 9,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 6.5,
+        "y": 79,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Operation"
+      }
+    },
+    {
+      "title": "Loading Screen",
+      "id": "mw-loading-screen",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 14,
+        "y": 77,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 0,
+          "g": 175,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "OPERATION"
+      }
+    },
+    {
+      "title": "Juggernaut",
+      "id": "mw-juggernaut",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 81,
+        "y": 85,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Toggle Music"
+      }
+    }
+  ]
+}
