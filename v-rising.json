@@ -1,24 +1,24 @@
 {
-  "id": "realm-royale",
-  "title": "Realm Royale",
+  "id": "v-rising",
+  "title": "V Rising",
   "triggers": [
     {
-      "title": "Crown Royale",
-      "id": "realm-crown-royale",
+      "title": "you were slain",
+      "id": "v-rising-you-were-slain",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 3,
+      "secondsBefore": 9,
+      "secondsAfter": 1,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 43,
-        "y": 29,
+        "x": 38.5,
+        "y": 19.500000000000004,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 14,
-        "height": 10,
+        "width": 7,
+        "height": 5,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -26,48 +26,10 @@
         {
           "type": "threshold",
           "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 60
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "([cC][rR][o0O][wW][nN])|([rR][oO][yYvV][aA][lL][eE])"
-      }
-    },
-    {
-      "title": "eliminated",
-      "id": "realm-royale-eliminated",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 7.5,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 30.999999999999996,
-        "y": 30,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 3.5,
-        "height": 3.5000000000000004,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 30
+          "r": 200,
+          "g": 0,
+          "b": 0,
+          "threshold": 28
         }
       ],
       "ai": {
@@ -76,6 +38,44 @@
       "parser": {
         "type": "regex",
         "regex": "YOU"
+      }
+    },
+    {
+      "title": "boss beaten",
+      "id": "v-rising-boss-beaten",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 9,
+      "secondsAfter": 1,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 39.5,
+        "y": 18.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 4,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 40
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "NEW"
       }
     }
   ]

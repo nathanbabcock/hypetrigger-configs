@@ -1,176 +1,24 @@
 {
-  "id": "rogue-company",
-  "title": "Rogue Company",
+  "id": "wreckfest",
+  "title": "Wreckfest",
   "triggers": [
     {
-      "title": "Downed",
-      "id": "rogue-downed",
+      "title": "On Finish",
+      "id": "wreckfest-finish",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 2.5,
+      "secondsBefore": 4,
+      "secondsAfter": 4,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 44.00000000000001,
-        "y": 76.00000000000001,
+        "x": 42,
+        "y": 42,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 12.000000000000002,
-        "height": 2.5,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 70
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "[DO0]{2}[WVU]NED?"
-      }
-    },
-    {
-      "title": "Eliminated",
-      "id": "rogue-eliminated",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 44.000000000000014,
-        "y": 76.00000000000001,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 12.000000000000002,
-        "height": 2.5,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 70
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "EL[Il1]M[Il1]NATE[D?]"
-      }
-    },
-    {
-      "title": "player downed",
-      "id": "rogue-company-player-downed",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 90.5,
-        "y": 14.000000000000002,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 5.5,
-        "height": 4,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 80
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "[DO]OWNED"
-      }
-    },
-    {
-      "title": "player eliminated",
-      "id": "rogue-company-player-eliminated",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 89.5,
-        "y": 14.500000000000002,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 6.5,
-        "height": 3.0000000000000004,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 70
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "ELIMINATED"
-      }
-    },
-    {
-      "title": "round loss",
-      "id": "rogue-company-round-loss",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 51.5,
-        "y": 18.5,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 7,
-        "height": 4.5,
+        "width": 16.5,
+        "height": 8.500000000000002,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -189,26 +37,26 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "LOSS"
+        "regex": "FINISHED"
       }
     },
     {
-      "title": "round won",
-      "id": "rogue-compnay-round-won",
+      "title": "spin out",
+      "id": "wreckfest-spin-out",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 2.5,
+      "secondsBefore": 2,
+      "secondsAfter": 2,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 51.5,
-        "y": 18.5,
+        "x": 45.5,
+        "y": 15.5,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 6.5,
-        "height": 4,
+        "width": 5.999999999999999,
+        "height": 8,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -216,10 +64,10 @@
         {
           "type": "threshold",
           "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 20
+          "r": 217,
+          "g": 210,
+          "b": 175,
+          "threshold": 8
         }
       ],
       "ai": {
@@ -227,26 +75,26 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "WON"
+        "regex": "SPIN[OQ]UT"
       }
     },
     {
-      "title": "defeat",
-      "id": "rogue-company-defeat",
+      "title": "shunt",
+      "id": "wreckfest-shunt",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 2.5,
+      "secondsBefore": 2,
+      "secondsAfter": 2,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 37.5,
-        "y": 45.5,
+        "x": 45.5,
+        "y": 15.5,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 12.5,
-        "height": 10,
+        "width": 5.999999999999999,
+        "height": 8,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -254,10 +102,10 @@
         {
           "type": "threshold",
           "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 42
+          "r": 217,
+          "g": 210,
+          "b": 175,
+          "threshold": 8
         }
       ],
       "ai": {
@@ -265,25 +113,63 @@
       },
       "parser": {
         "type": "regex",
-        "regex": ".EF"
+        "regex": "SHUNT"
       }
     },
     {
-      "title": "winner",
-      "id": "rogue-compnay-winner",
+      "title": "head on",
+      "id": "wreckfest-head-on",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 2.5,
+      "secondsBefore": 2,
+      "secondsAfter": 2,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 36,
-        "y": 45.5,
+        "x": 45.5,
+        "y": 15.5,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 10.5,
+        "width": 5.999999999999999,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 217,
+          "g": 210,
+          "b": 175,
+          "threshold": 8
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "HEAD-ON"
+      }
+    },
+    {
+      "title": "rear-ender",
+      "id": "wreckfest-rear-ender",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45.5,
+        "y": 15.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
         "height": 9,
         "widthUnit": "%",
         "heightUnit": "%"
@@ -292,10 +178,10 @@
         {
           "type": "threshold",
           "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 21
+          "r": 217,
+          "g": 210,
+          "b": 175,
+          "threshold": 8
         }
       ],
       "ai": {
@@ -303,7 +189,159 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "VIC"
+        "regex": "REAR[ -]ENDER"
+      }
+    },
+    {
+      "title": "slam",
+      "id": "wreckfest-slam",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45.5,
+        "y": 15.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 9,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 217,
+          "g": 210,
+          "b": 175,
+          "threshold": 8
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "SLAM"
+      }
+    },
+    {
+      "title": "wrecked",
+      "id": "wreckfest-wrecked",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45.5,
+        "y": 15.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 9,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 217,
+          "g": 210,
+          "b": 175,
+          "threshold": 8
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "WRECKED"
+      }
+    },
+    {
+      "title": "wrecking assist",
+      "id": "wreckfest-wrecking-assist",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 44.5,
+        "y": 15.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 9,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 217,
+          "g": 210,
+          "b": 175,
+          "threshold": 8
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "WRECKING ASSIST"
+      }
+    },
+    {
+      "title": "best lap",
+      "id": "wreckfest-best-lap",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 4,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 44,
+        "y": 25,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.5,
+        "height": 5.500000000000001,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 145,
+          "g": 125,
+          "b": 45,
+          "threshold": 22
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "BESTLAP"
       }
     }
   ]

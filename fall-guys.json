@@ -1,24 +1,24 @@
 {
-  "id": "knockout-city",
-  "title": "Knockout City",
+  "id": "fall-guys",
+  "title": "Fall Guys: Ultimate Knockout",
   "triggers": [
     {
-      "title": "Knockout",
-      "id": "single-ko",
+      "title": "qualified",
+      "id": "fall-guys-qualified",
       "debug": false,
       "enabled": true,
       "runForever": false,
       "secondsBefore": 5,
-      "secondsAfter": 5,
+      "secondsAfter": 2.5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 7,
-        "y": 4,
+        "x": 23.999999999999996,
+        "y": 36,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 7,
-        "height": 9,
+        "width": 51.5,
+        "height": 18,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -29,7 +29,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 42
+          "threshold": 15
         }
       ],
       "ai": {
@@ -37,12 +37,12 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "[KV][O0]"
+        "regex": "QUALIFIED"
       }
     },
     {
-      "title": "match end",
-      "id": "knockout-city-match-end",
+      "title": "winner",
+      "id": "fall-guys-winner",
       "debug": false,
       "enabled": true,
       "runForever": false,
@@ -51,12 +51,12 @@
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 3.5,
-        "y": 55.50000000000001,
+        "x": 28.999999999999996,
+        "y": 35,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 15.499999999999998,
-        "height": 10.5,
+        "width": 41,
+        "height": 18,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -67,7 +67,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 14
+          "threshold": 6
         }
       ],
       "ai": {
@@ -75,12 +75,12 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "MAT"
+        "regex": "WINNER"
       }
     },
     {
-      "title": "player death",
-      "id": "knockout-city-player-death",
+      "title": "eliminated",
+      "id": "fall-guys-eliminated",
       "debug": false,
       "enabled": true,
       "runForever": false,
@@ -89,12 +89,12 @@
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 36,
-        "y": 47.5,
+        "x": 23.5,
+        "y": 40,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 11,
-        "height": 6.000000000000001,
+        "width": 52.99999999999999,
+        "height": 16.5,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -105,7 +105,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 13
+          "threshold": 20
         }
       ],
       "ai": {
@@ -113,7 +113,7 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "RESPA"
+        "regex": "ELIMINATED"
       }
     }
   ]

@@ -74,6 +74,82 @@
         "type": "regex",
         "regex": "[Yy][oO0][uU]\\s*[hH][aA4][vV][eE]\\s*[bB][eE]{2}[nN]\\s*[s$S][lLiI1][aA4][lLiI1][nN]"
       }
+    },
+    {
+      "title": "victory",
+      "id": "lol-victory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 45,
+      "secondsAfter": 1,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 39.5,
+        "y": 37,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 11.5,
+        "height": 7.000000000000001,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 100,
+          "b": 100,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "VICT"
+      }
+    },
+    {
+      "title": "defeat",
+      "id": "lol-defeat",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 45,
+      "secondsAfter": 1,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 40,
+        "y": 36.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 7.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 100,
+          "b": 100,
+          "threshold": 33
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DEF"
+      }
     }
   ]
 }

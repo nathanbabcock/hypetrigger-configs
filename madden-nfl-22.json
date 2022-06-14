@@ -1,23 +1,61 @@
 {
-  "id": "cod-vanguard",
-  "title": "Call of Duty: Vanguard",
+  "id": "madden-nfl-22",
+  "title": "Madden NFL 22",
   "triggers": [
     {
-      "title": "Kill",
-      "id": "vanguard-kill",
+      "title": "quarter end",
+      "id": "madden-nfl-22-quarter-end",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 10,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 70,
+        "y": 7.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 4,
+        "height": 4.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "0:00"
+      }
+    },
+    {
+      "title": "pick",
+      "id": "madden-nfl-22-pick",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
       "secondsAfter": 2.5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 45,
-        "y": 77,
+        "x": 35.5,
+        "y": 13,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 10,
+        "width": 30,
         "height": 2.5,
         "widthUnit": "%",
         "heightUnit": "%"
@@ -27,9 +65,47 @@
           "type": "threshold",
           "title": "",
           "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 13
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "PICK"
+      }
+    },
+    {
+      "title": "flag",
+      "id": "madden-nfl-22-flag",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 44,
+        "y": 13,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 11.999999999999998,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 0,
           "g": 0,
           "b": 0,
-          "threshold": 42
+          "threshold": 34
         }
       ],
       "ai": {
@@ -37,26 +113,26 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "K[I1l]{3}"
+        "regex": "FLAG"
       }
     },
     {
-      "title": "double kill",
-      "id": "vanguard ",
+      "title": "safety",
+      "id": "madden-nfl-22-safety",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 5,
+      "secondsBefore": 7.5,
       "secondsAfter": 2.5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 57.5,
-        "y": 41,
+        "x": 41,
+        "y": 13,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 4,
-        "height": 12.000000000000002,
+        "width": 17.5,
+        "height": 3.0000000000000004,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -65,8 +141,46 @@
           "type": "threshold",
           "title": "",
           "r": 255,
-          "g": 220,
-          "b": 0,
+          "g": 255,
+          "b": 255,
+          "threshold": 29
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "USER SAFETY"
+      }
+    },
+    {
+      "title": "touchdown",
+      "id": "madden-nfl-touchdown",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 36,
+        "y": 7.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 27.5,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
           "threshold": 14
         }
       ],
@@ -75,83 +189,7 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "[BDO][BDO]UBLE"
-      }
-    },
-    {
-      "title": "triple kill",
-      "id": "vanguard-triple-kill",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 5,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 57.99999999999999,
-        "y": 42,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 2.9999999999999996,
-        "height": 12.000000000000002,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 220,
-          "b": 0,
-          "threshold": 14
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "TRIPLE"
-      }
-    },
-    {
-      "title": "multi kill",
-      "id": "vanguard-fury",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 5,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 57.5,
-        "y": 41.50000000000001,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 2.9999999999999996,
-        "height": 12.000000000000002,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 220,
-          "b": 0,
-          "threshold": 28
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "FURY"
+        "regex": "TOUCHDOWN"
       }
     }
   ]

@@ -1,48 +1,10 @@
 {
-  "id": "realm-royale",
-  "title": "Realm Royale",
+  "id": "the-cycle-frontier",
+  "title": "The Cycle: Frontier",
   "triggers": [
     {
-      "title": "Crown Royale",
-      "id": "realm-crown-royale",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 3,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 43,
-        "y": 29,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 14,
-        "height": 10,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 60
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "([cC][rR][o0O][wW][nN])|([rR][oO][yYvV][aA][lL][eE])"
-      }
-    },
-    {
-      "title": "eliminated",
-      "id": "realm-royale-eliminated",
+      "title": "evacuation successful",
+      "id": "tcf-evacuation-successful",
       "debug": false,
       "enabled": true,
       "runForever": false,
@@ -51,12 +13,12 @@
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 30.999999999999996,
-        "y": 30,
+        "x": 23.999999999999996,
+        "y": 46.50000000000001,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 3.5,
-        "height": 3.5000000000000004,
+        "width": 10,
+        "height": 7.000000000000001,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -67,7 +29,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 30
+          "threshold": 15
         }
       ],
       "ai": {
@@ -75,7 +37,45 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "YOU"
+        "regex": "EVAC"
+      }
+    },
+    {
+      "title": "left behind",
+      "id": "tcf-left-behind",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 37.5,
+        "y": 46.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 9,
+        "height": 7.000000000000001,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 23
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "LEFT"
       }
     }
   ]

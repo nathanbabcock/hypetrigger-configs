@@ -1,10 +1,10 @@
 {
-  "id": "realm-royale",
-  "title": "Realm Royale",
+  "id": "sims-4",
+  "title": "The Sims 4",
   "triggers": [
     {
-      "title": "Crown Royale",
-      "id": "realm-crown-royale",
+      "title": "game over",
+      "id": "sims-4-game-over",
       "debug": false,
       "enabled": true,
       "runForever": false,
@@ -13,12 +13,12 @@
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 43,
-        "y": 29,
+        "x": 45,
+        "y": 37.5,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 14,
-        "height": 10,
+        "width": 9.5,
+        "height": 6.000000000000001,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -29,7 +29,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 60
+          "threshold": 35
         }
       ],
       "ai": {
@@ -37,26 +37,26 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "([cC][rR][o0O][wW][nN])|([rR][oO][yYvV][aA][lL][eE])"
+        "regex": "GAME OVER"
       }
     },
     {
-      "title": "eliminated",
-      "id": "realm-royale-eliminated",
+      "title": "baby born",
+      "id": "sims-4-baby-born",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 7.5,
-      "secondsAfter": 2.5,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 30.999999999999996,
-        "y": 30,
+        "x": 44,
+        "y": 39.5,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 3.5,
-        "height": 3.5000000000000004,
+        "width": 10,
+        "height": 3.0000000000000004,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -67,7 +67,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 30
+          "threshold": 13
         }
       ],
       "ai": {
@@ -75,7 +75,7 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "YOU"
+        "regex": "CONGRATULATION"
       }
     }
   ]

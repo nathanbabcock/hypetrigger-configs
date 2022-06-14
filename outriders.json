@@ -1,99 +1,99 @@
 {
-  "id": "knockout-city",
-  "title": "Knockout City",
+  "id": "outriders",
+  "title": "Outriders",
   "triggers": [
     {
-      "title": "Knockout",
-      "id": "single-ko",
+      "title": "world tier",
+      "id": "outriders-world-tier",
       "debug": false,
       "enabled": true,
       "runForever": false,
       "secondsBefore": 5,
-      "secondsAfter": 5,
+      "secondsAfter": 2.5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 7,
-        "y": 4,
+        "x": 39,
+        "y": 23,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10.5,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 30
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "WORLD"
+      }
+    },
+    {
+      "title": "level up",
+      "id": "outriders-level-up",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 43.5,
+        "y": 23,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 9,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 30
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "LEVEL"
+      }
+    },
+    {
+      "title": "expedition successful",
+      "id": "outriders-expedition-successful",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 34.5,
+        "y": 29.500000000000007,
         "xUnit": "%",
         "yUnit": "%",
         "width": 7,
-        "height": 9,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 42
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "[KV][O0]"
-      }
-    },
-    {
-      "title": "match end",
-      "id": "knockout-city-match-end",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 7.5,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 3.5,
-        "y": 55.50000000000001,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 15.499999999999998,
-        "height": 10.5,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 14
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "MAT"
-      }
-    },
-    {
-      "title": "player death",
-      "id": "knockout-city-player-death",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 7.5,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 36,
-        "y": 47.5,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 11,
         "height": 6.000000000000001,
         "widthUnit": "%",
         "heightUnit": "%"
@@ -103,9 +103,9 @@
           "type": "threshold",
           "title": "",
           "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 13
+          "g": 215,
+          "b": 85,
+          "threshold": 23
         }
       ],
       "ai": {
@@ -113,7 +113,45 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "RESPA"
+        "regex": "Expe"
+      }
+    },
+    {
+      "title": "expedition failed",
+      "id": "outriders-expedition-failed",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 38,
+        "y": 40.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 5.500000000000001,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 200,
+          "g": 0,
+          "b": 0,
+          "threshold": 16
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Expe"
       }
     }
   ]

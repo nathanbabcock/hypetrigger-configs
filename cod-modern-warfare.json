@@ -1,6 +1,6 @@
 {
   "id": "cod-modern-warfare",
-  "title": "Call Of Duty: Modern Warfare",
+  "title": "Call of Duty: Modern Warfare",
   "triggers": [
     {
       "title": "Insertion",
@@ -114,6 +114,234 @@
       "parser": {
         "type": "regex",
         "regex": "Toggle Music"
+      }
+    },
+    {
+      "title": "headshot",
+      "id": "mw-headshot",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 210,
+          "g": 180,
+          "b": 98,
+          "threshold": 12
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "HEADSHOT"
+      }
+    },
+    {
+      "title": "kill",
+      "id": "mw-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 48.5,
+        "y": 78.00000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 4.5,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 80,
+          "b": 80,
+          "threshold": 41
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "KILL"
+      }
+    },
+    {
+      "title": "double kill",
+      "id": "mw-double-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 4.5,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 210,
+          "g": 180,
+          "b": 95,
+          "threshold": 13
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[DO][DO]UBLE"
+      }
+    },
+    {
+      "title": "triple kill",
+      "id": "mw-triple-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 4,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 210,
+          "g": 180,
+          "b": 95,
+          "threshold": 13
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TRIPLE"
+      }
+    },
+    {
+      "title": "quad kill",
+      "id": "mw-quad-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 3.5,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 210,
+          "g": 180,
+          "b": 95,
+          "threshold": 13
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "QUAD"
+      }
+    },
+    {
+      "title": "multi kill",
+      "id": "mw-multi-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.5,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 210,
+          "g": 180,
+          "b": 95,
+          "threshold": 13
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "MULTI"
       }
     }
   ]

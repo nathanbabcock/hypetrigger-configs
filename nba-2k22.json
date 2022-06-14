@@ -1,62 +1,24 @@
 {
-  "id": "realm-royale",
-  "title": "Realm Royale",
+  "id": "nba-2k22",
+  "title": "NBA 2K22",
   "triggers": [
     {
-      "title": "Crown Royale",
-      "id": "realm-crown-royale",
+      "title": "foul",
+      "id": "nba-2k22-foul",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 3,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 43,
-        "y": 29,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 14,
-        "height": 10,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 60
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "([cC][rR][o0O][wW][nN])|([rR][oO][yYvV][aA][lL][eE])"
-      }
-    },
-    {
-      "title": "eliminated",
-      "id": "realm-royale-eliminated",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 7.5,
+      "secondsBefore": 4,
       "secondsAfter": 2.5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 30.999999999999996,
-        "y": 30,
+        "x": 80,
+        "y": 71.5,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 3.5,
-        "height": 3.5000000000000004,
+        "width": 5,
+        "height": 4,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -67,7 +29,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 30
+          "threshold": 29
         }
       ],
       "ai": {
@@ -75,7 +37,45 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "YOU"
+        "regex": "FOUL"
+      }
+    },
+    {
+      "title": "quarter end",
+      "id": "nba-2k22-quarter-end",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 78.5,
+        "y": 83.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 2.5,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "0.0"
       }
     }
   ]

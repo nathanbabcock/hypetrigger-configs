@@ -1,62 +1,24 @@
 {
-  "id": "realm-royale",
-  "title": "Realm Royale",
+  "id": "cod-cold-war",
+  "title": "Call of Duty: Black Ops Cold War",
   "triggers": [
     {
-      "title": "Crown Royale",
-      "id": "realm-crown-royale",
+      "title": "streak",
+      "id": "cw-streak",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 3,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 43,
-        "y": 29,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 14,
-        "height": 10,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 60
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "([cC][rR][o0O][wW][nN])|([rR][oO][yYvV][aA][lL][eE])"
-      }
-    },
-    {
-      "title": "eliminated",
-      "id": "realm-royale-eliminated",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 7.5,
+      "secondsBefore": 2.5,
       "secondsAfter": 2.5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 30.999999999999996,
-        "y": 30,
+        "x": 56.99999999999999,
+        "y": 43.5,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 3.5,
-        "height": 3.5000000000000004,
+        "width": 7,
+        "height": 11.000000000000002,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -67,7 +29,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 30
+          "threshold": 20
         }
       ],
       "ai": {
@@ -75,7 +37,45 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "YOU"
+        "regex": "Streak"
+      }
+    },
+    {
+      "title": "elimination",
+      "id": "cw-elimination",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 56.99999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8.499999999999998,
+        "height": 12.000000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 16
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Elimination|kill"
       }
     }
   ]

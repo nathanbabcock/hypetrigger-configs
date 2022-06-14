@@ -1,6 +1,6 @@
 {
   "id": "smite",
-  "title": "Smite",
+  "title": "SMITE",
   "triggers": [
     {
       "title": "Kill",
@@ -38,6 +38,272 @@
       "parser": {
         "type": "regex",
         "regex": "[KV][IL1]{3}"
+      }
+    },
+    {
+      "title": "double kill",
+      "id": "smite-double-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46,
+        "y": 7.000000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DOUBLE"
+      }
+    },
+    {
+      "title": "triple kill",
+      "id": "smite-triple-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46,
+        "y": 7.000000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TRIPLE"
+      }
+    },
+    {
+      "title": "quadra kill",
+      "id": "smite-quadra-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46,
+        "y": 7.000000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "QUADRA"
+      }
+    },
+    {
+      "title": "penta kill",
+      "id": "smite-penta-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46,
+        "y": 7.000000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "PENTA"
+      }
+    },
+    {
+      "title": "death",
+      "id": "smite-death",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 48.5,
+        "y": 34.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 15,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "PLAY"
+      }
+    },
+    {
+      "title": "defeat",
+      "id": "smite-defeat",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 20,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 43,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 9,
+        "height": 6.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 20
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DEFE"
+      }
+    },
+    {
+      "title": "victory",
+      "id": "smite-victory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 20,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 41,
+        "y": 43,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 9,
+        "height": 6.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 25
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "VICT"
       }
     }
   ]

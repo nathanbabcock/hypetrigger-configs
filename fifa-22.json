@@ -1,23 +1,23 @@
 {
-  "id": "cod-vanguard",
-  "title": "Call of Duty: Vanguard",
+  "id": "fifa-22",
+  "title": "FIFA 22",
   "triggers": [
     {
-      "title": "Kill",
-      "id": "vanguard-kill",
+      "title": "injury",
+      "id": "fifa-22-injury",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 10,
+      "secondsBefore": 2.5,
       "secondsAfter": 2.5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 45,
-        "y": 77,
+        "x": 18,
+        "y": 15.5,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 10,
+        "width": 4,
         "height": 2.5,
         "widthUnit": "%",
         "heightUnit": "%"
@@ -26,9 +26,123 @@
         {
           "type": "threshold",
           "title": "",
+          "r": 50,
+          "g": 168,
+          "b": 157,
+          "threshold": 38
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "INJURY"
+      }
+    },
+    {
+      "title": "yellow card",
+      "id": "fifa-22-yellow-card",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 6,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 16.5,
+        "y": 15.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 0,
+          "g": 200,
+          "b": 207,
+          "threshold": 40
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "YELLOW CARD"
+      }
+    },
+    {
+      "title": "red card",
+      "id": "fifa-22-red-card",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 6,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 17.5,
+        "y": 15.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 0,
+          "g": 200,
+          "b": 255,
+          "threshold": 40
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "RED CARD"
+      }
+    },
+    {
+      "title": "goal",
+      "id": "fifa-22-goal",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46.5,
+        "y": 78.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 7.000000000000001,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
           "r": 255,
-          "g": 0,
-          "b": 0,
+          "g": 255,
+          "b": 255,
           "threshold": 42
         }
       ],
@@ -37,26 +151,26 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "K[I1l]{3}"
+        "regex": "\\d+-\\d+"
       }
     },
     {
-      "title": "double kill",
-      "id": "vanguard ",
+      "title": "game end",
+      "id": "fifa-22-game-end",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 5,
+      "secondsBefore": 10,
       "secondsAfter": 2.5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 57.5,
-        "y": 41,
+        "x": 47.5,
+        "y": 11.000000000000002,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 4,
-        "height": 12.000000000000002,
+        "width": 5,
+        "height": 4,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -65,9 +179,9 @@
           "type": "threshold",
           "title": "",
           "r": 255,
-          "g": 220,
-          "b": 0,
-          "threshold": 14
+          "g": 255,
+          "b": 255,
+          "threshold": 42
         }
       ],
       "ai": {
@@ -75,83 +189,7 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "[BDO][BDO]UBLE"
-      }
-    },
-    {
-      "title": "triple kill",
-      "id": "vanguard-triple-kill",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 5,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 57.99999999999999,
-        "y": 42,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 2.9999999999999996,
-        "height": 12.000000000000002,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 220,
-          "b": 0,
-          "threshold": 14
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "TRIPLE"
-      }
-    },
-    {
-      "title": "multi kill",
-      "id": "vanguard-fury",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 5,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 57.5,
-        "y": 41.50000000000001,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 2.9999999999999996,
-        "height": 12.000000000000002,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 220,
-          "b": 0,
-          "threshold": 28
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "FURY"
+        "regex": "\\d+:\\d+"
       }
     }
   ]

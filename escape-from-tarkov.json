@@ -1,0 +1,44 @@
+{
+  "id": "escape-from-tarkov",
+  "title": "Escape from Tarkov",
+  "triggers": [
+    {
+      "title": "death / raid ended",
+      "id": "escape-from-tarkov-death",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 1,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 44,
+        "y": 2,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 4.5,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 19
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[PR]A[IT][D]"
+      }
+    }
+  ]
+}

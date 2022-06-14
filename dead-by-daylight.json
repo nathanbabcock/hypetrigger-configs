@@ -1,48 +1,10 @@
 {
-  "id": "realm-royale",
-  "title": "Realm Royale",
+  "id": "dead-by-daylight",
+  "title": "Dead By Daylight",
   "triggers": [
     {
-      "title": "Crown Royale",
-      "id": "realm-crown-royale",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 10,
-      "secondsAfter": 3,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 43,
-        "y": 29,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 14,
-        "height": 10,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 60
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "([cC][rR][o0O][wW][nN])|([rR][oO][yYvV][aA][lL][eE])"
-      }
-    },
-    {
-      "title": "eliminated",
-      "id": "realm-royale-eliminated",
+      "title": "match result",
+      "id": "dead-by-daylight-match-result",
       "debug": false,
       "enabled": true,
       "runForever": false,
@@ -51,11 +13,11 @@
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 30.999999999999996,
-        "y": 30,
+        "x": 2.9999999999999996,
+        "y": 21,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 3.5,
+        "width": 10,
         "height": 3.5000000000000004,
         "widthUnit": "%",
         "heightUnit": "%"
@@ -75,7 +37,45 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "YOU"
+        "regex": "MATCH RESULT"
+      }
+    },
+    {
+      "title": "kill",
+      "id": "dead-by-daylight-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 6.5,
+        "y": 51.00000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 2.9999999999999996,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 30
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "KILL"
       }
     }
   ]

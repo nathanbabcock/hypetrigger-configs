@@ -112,6 +112,196 @@
         "type": "regex",
         "regex": "[UV][IL1]CTORY"
       }
+    },
+    {
+      "title": "headshot",
+      "id": "warzone-headshot",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 196,
+          "g": 154,
+          "b": 64,
+          "threshold": 18
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "HEADSHOT"
+      }
+    },
+    {
+      "title": "double kill",
+      "id": "warzone-double-kill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.5,
+        "height": 12.000000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 196,
+          "g": 154,
+          "b": 64,
+          "threshold": 18
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[DO][DO]UBLE"
+      }
+    },
+    {
+      "title": "triple kill",
+      "id": "warzone-triple-kill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 12.000000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 196,
+          "g": 154,
+          "b": 64,
+          "threshold": 18
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TRIPLE"
+      }
+    },
+    {
+      "title": "quad kill",
+      "id": "warzone-quad-kill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 12.000000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 196,
+          "g": 154,
+          "b": 64,
+          "threshold": 18
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "QUAD"
+      }
+    },
+    {
+      "title": "multi kill",
+      "id": "warzone-multi-kill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59.49999999999999,
+        "y": 43.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 12.000000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 196,
+          "g": 154,
+          "b": 64,
+          "threshold": 18
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "MULTI"
+      }
     }
   ]
 }

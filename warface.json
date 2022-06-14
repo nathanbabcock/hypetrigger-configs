@@ -1,0 +1,44 @@
+{
+  "id": "warface",
+  "title": "Warface",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "warface-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 43.5,
+        "y": 59.499999999999986,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 12.5,
+        "height": 5.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 34
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "KILL"
+      }
+    }
+  ]
+}

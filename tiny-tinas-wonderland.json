@@ -1,99 +1,23 @@
 {
-  "id": "knockout-city",
-  "title": "Knockout City",
+  "id": "tiny-tinas-wonderlands",
+  "title": "Tiny Tina's Wonderlands",
   "triggers": [
     {
-      "title": "Knockout",
-      "id": "single-ko",
+      "title": "campaign challenge complete",
+      "id": "ttw-campaign-challenge",
       "debug": false,
       "enabled": true,
       "runForever": false,
       "secondsBefore": 5,
-      "secondsAfter": 5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 7,
-        "y": 4,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 7,
-        "height": 9,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 42
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "[KV][O0]"
-      }
-    },
-    {
-      "title": "match end",
-      "id": "knockout-city-match-end",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 7.5,
       "secondsAfter": 2.5,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 3.5,
-        "y": 55.50000000000001,
+        "x": 23.999999999999996,
+        "y": 11.5,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 15.499999999999998,
-        "height": 10.5,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 14
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "MAT"
-      }
-    },
-    {
-      "title": "player death",
-      "id": "knockout-city-player-death",
-      "debug": false,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 7.5,
-      "secondsAfter": 2.5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 36,
-        "y": 47.5,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 11,
+        "width": 8.499999999999998,
         "height": 6.000000000000001,
         "widthUnit": "%",
         "heightUnit": "%"
@@ -105,7 +29,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 13
+          "threshold": 27
         }
       ],
       "ai": {
@@ -113,7 +37,83 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "RESPA"
+        "regex": "CAMP"
+      }
+    },
+    {
+      "title": "encounter clear",
+      "id": "ttw-encounter-clear",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 36,
+        "y": 14.500000000000002,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 6.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 21
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "ENCO"
+      }
+    },
+    {
+      "title": "level up",
+      "id": "ttw-level-up",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46.5,
+        "y": 25,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 7.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 20
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "\\d+"
       }
     }
   ]

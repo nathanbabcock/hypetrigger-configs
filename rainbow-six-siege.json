@@ -1,135 +1,24 @@
 {
-  "id": "fortnite",
-  "title": "Fortnite",
+  "id": "rainbow-six-siege",
+  "title": "Tom Clancy's Rainbow Six Siege",
   "triggers": [
     {
-      "id": "fortnite-kill",
-      "title": "Kill",
-      "enabled": true,
-      "debug": false,
-      "secondsBefore": 10,
-      "secondsAfter": 3,
-      "cropFunction": {
-        "y": 68.611111,
-        "yUnit": "%",
-        "yAnchor": "top",
-        "x": 40.96875,
-        "xUnit": "%",
-        "xAnchor": "left",
-        "width": 14.7917,
-        "widthUnit": "%",
-        "height": 2.777778,
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 42
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "[Ee][LliI1Uu]{1,2}[Mm][LliI1][Nn][aA4][Tt][eE][dD]"
-      }
-    },
-    {
-      "id": "fortnite-death",
-      "title": "Death",
-      "enabled": true,
-      "debug": false,
-      "secondsBefore": 10,
-      "secondsAfter": 3,
-      "cropFunction": {
-        "y": 82.5,
-        "yUnit": "%",
-        "yAnchor": "top",
-        "x": 45,
-        "xUnit": "%",
-        "xAnchor": "left",
-        "width": 15.208333,
-        "widthUnit": "%",
-        "height": 4.259259,
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "r": 255,
-          "g": 255,
-          "b": 255,
-          "threshold": 42
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "[Ee][LliI1]{2}[Mm][LliI1][Nn][aA4][Tt][eE][dD]"
-      }
-    },
-    {
-      "title": "Headshot",
-      "id": "fortnite-headshot",
-      "debug": true,
-      "enabled": true,
-      "runForever": false,
-      "secondsBefore": 5,
-      "secondsAfter": 5,
-      "cropFunction": {
-        "yAnchor": "top",
-        "xAnchor": "left",
-        "x": 47,
-        "y": 12.5,
-        "xUnit": "%",
-        "yUnit": "%",
-        "width": 5.500000000000002,
-        "height": 2.5,
-        "widthUnit": "%",
-        "heightUnit": "%"
-      },
-      "filters": [
-        {
-          "type": "threshold",
-          "title": "",
-          "r": 255,
-          "g": 254,
-          "b": 255,
-          "threshold": 19
-        }
-      ],
-      "ai": {
-        "type": "ocr"
-      },
-      "parser": {
-        "type": "regex",
-        "regex": "[hH][eE][aA4][dD][sS2][hH][o0O][Tt]"
-      }
-    },
-    {
-      "title": "Victory Royale",
-      "id": "fortnite-victory",
-      "effects": [],
+      "title": "round lost",
+      "id": "rainbow-six-siege-round-lost",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 20,
-      "secondsAfter": 5,
+      "secondsBefore": 10,
+      "secondsAfter": 1,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
-        "x": 41,
-        "y": 3,
+        "x": 51.5,
+        "y": 36,
         "xUnit": "%",
         "yUnit": "%",
-        "width": 20,
-        "height": 24,
+        "width": 14,
+        "height": 8,
         "widthUnit": "%",
         "heightUnit": "%"
       },
@@ -140,7 +29,7 @@
           "r": 255,
           "g": 255,
           "b": 255,
-          "threshold": 25
+          "threshold": 16
         }
       ],
       "ai": {
@@ -148,7 +37,121 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "([vVyY][iIl1][cC][tT][o0O][rR][yYvV]|[rR][o0O][vVyY][aA][lL][eE])"
+        "regex": "LOST"
+      }
+    },
+    {
+      "title": "round won",
+      "id": "rainbow-six-siege-round-won",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 1,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 51,
+        "y": 36.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 13,
+        "height": 8.500000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 16
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "WON"
+      }
+    },
+    {
+      "title": "kill",
+      "id": "rainbow-six-siege-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 85.5,
+        "y": 40,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 19.500000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 37
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Kill"
+      }
+    },
+    {
+      "title": "headshot",
+      "id": "rainbow-six-siege-headshot",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 88.5,
+        "y": 40,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 26.500000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 131,
+          "g": 132,
+          "b": 125,
+          "threshold": 27
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Head Shot"
       }
     }
   ]
