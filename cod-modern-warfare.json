@@ -343,6 +343,44 @@
         "type": "regex",
         "regex": "MULTI"
       }
+    },
+    {
+      "title": "Stuck",
+      "id": "mw-stuck",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 12,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45,
+        "y": 26.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "STUCK"
+      }
     }
   ]
 }

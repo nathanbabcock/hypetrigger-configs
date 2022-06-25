@@ -1,0 +1,44 @@
+{
+  "id": "bf-2042",
+  "title": "Battlefield 2042",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "bf-2042-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 1.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 50,
+        "y": 75,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 9.5,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 20
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "XP"
+      }
+    }
+  ]
+}

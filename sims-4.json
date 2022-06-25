@@ -77,6 +77,44 @@
         "type": "regex",
         "regex": "CONGRATULATION"
       }
+    },
+    {
+      "title": "Milestone",
+      "id": "sims-4-milestone",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 41,
+        "y": 55.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 18,
+        "height": 6.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 26
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "MILESTONE|COMPLETE"
+      }
     }
   ]
 }

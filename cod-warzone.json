@@ -152,6 +152,82 @@
       }
     },
     {
+      "title": "On Downed",
+      "id": "warzone-downed",
+      "debug": true,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 60,
+        "y": 42,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DOWNED"
+      }
+    },
+    {
+      "title": "On Team Wipe",
+      "id": "warzone-team-wipe",
+      "debug": true,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 60,
+        "y": 42,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TEAM\\s?WIPED"
+      }
+    },
+    {
       "title": "double kill",
       "id": "warzone-double-kill",
       "debug": false,

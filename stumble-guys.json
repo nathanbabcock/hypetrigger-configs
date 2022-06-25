@@ -1,0 +1,44 @@
+{
+  "id": "stumble-guys",
+  "title": "Stumble Guys",
+  "triggers": [
+    {
+      "title": "Qualified",
+      "id": "stumble-guys-qualified",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 23.5,
+        "y": 41,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 52.5,
+        "height": 19,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "QUALIFIED"
+      }
+    }
+  ]
+}

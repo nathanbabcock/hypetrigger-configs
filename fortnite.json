@@ -150,6 +150,44 @@
         "type": "regex",
         "regex": "([vVyY][iIl1][cC][tT][o0O][rR][yYvV]|[rR][o0O][vVyY][aA][lL][eE])"
       }
+    },
+    {
+      "title": "Knocked Down",
+      "id": "fortnite-knocked",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 4,
+      "secondsAfter": 3,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 38,
+        "y": 68,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 17.5,
+        "height": 4,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 19
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "kn[o0]cked|d[o0]wn"
+      }
     }
   ]
 }

@@ -1,0 +1,82 @@
+{
+  "id": "hunt-showdown",
+  "title": "Hunt: Showdown",
+  "triggers": [
+    {
+      "title": "Down",
+      "id": "hunt-down",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 37.5,
+        "y": 9,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 27,
+        "height": 6.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 75
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Y[OC].?U.?RE.?DO"
+      }
+    },
+    {
+      "title": "Dead",
+      "id": "hunt-dead",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 38,
+        "y": 9.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 24.5,
+        "height": 7.000000000000001,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 124,
+          "g": 12,
+          "b": 24,
+          "threshold": 18
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DEAD"
+      }
+    }
+  ]
+}
