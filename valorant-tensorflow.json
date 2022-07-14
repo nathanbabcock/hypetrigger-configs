@@ -1,0 +1,41 @@
+{
+  "id": "valorant-tensorflow",
+  "title": "Valorant (tensorflow beta)",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "valorant-tf-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 44.5,
+        "y": 71,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 11.000000000000004,
+        "height": 17.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "tensorflow",
+        "modelDir": "data\\tensorflow-models\\valorant-kill"
+      }
+    }
+  ]
+}

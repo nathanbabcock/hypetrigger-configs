@@ -1,0 +1,45 @@
+{
+  "id": "league-of-legends-stat-tracker",
+  "title": "League of Legends (stat tracker)",
+  "exe": "League of Legends.exe",
+  "triggers": [
+    {
+      "title": "KDA",
+      "id": "league-kda",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 1,
+      "secondsAfter": 1,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 86.7,
+        "y": 0,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5,
+        "height": 3.055556,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 193,
+          "g": 200,
+          "b": 197,
+          "threshold": 38
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "(\\d\\d?)/(\\d\\d?)/(\\d\\d?)"
+      }
+    }
+  ]
+}

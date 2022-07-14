@@ -1,0 +1,386 @@
+{
+  "id": "crowz",
+  "title": "Crowz",
+  "triggers": [
+    {
+      "title": "Enemy Down",
+      "id": "crowz-enemy-down",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59,
+        "y": 49,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Enemy down"
+      }
+    },
+    {
+      "title": "Tank Bomber",
+      "id": "crowz-tank-bomber",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59,
+        "y": 49,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Tank Bomber"
+      }
+    },
+    {
+      "title": "Combo Kills",
+      "id": "crowz-combo-kills",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59,
+        "y": 49,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Combo Kills"
+      }
+    },
+    {
+      "title": "Serial Kill",
+      "id": "crowz-serial-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59,
+        "y": 49,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Serial Kill"
+      }
+    },
+    {
+      "title": "Headhunter",
+      "id": "crowz-headhunter",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59,
+        "y": 49,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Headhunter"
+      }
+    },
+    {
+      "title": "Squad Kill Assist",
+      "id": "crowz-squad-kill-assist",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59,
+        "y": 49,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 9,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Squad Kill Assist"
+      }
+    },
+    {
+      "title": "Revive",
+      "id": "crowz-revive",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59,
+        "y": 49,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Revive"
+      }
+    },
+    {
+      "title": "Capture Complete",
+      "id": "crowz-capture-complete",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 59,
+        "y": 49,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Capture Complete"
+      }
+    },
+    {
+      "title": "Scoreboard",
+      "id": "crowz-scoreboard",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 16,
+      "secondsAfter": 0,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 32,
+        "y": 4,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 36,
+        "height": 6,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 0,
+          "b": 0,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "OPERATION"
+      }
+    },
+    {
+      "title": "Best Squad",
+      "id": "crowz-best-squad",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 1,
+      "secondsAfter": 0,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 44,
+        "y": 4,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 12,
+        "height": 6,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Best Squad"
+      }
+    }
+  ]
+}

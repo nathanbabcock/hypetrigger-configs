@@ -151,7 +151,7 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "[MH]EADSHO[TY]"
+        "regex": "[FHY]EA[DG]SH[OG][TY]"
       }
     },
     {
