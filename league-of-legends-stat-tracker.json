@@ -1,16 +1,18 @@
 {
   "id": "league-of-legends-stat-tracker",
-  "title": "League of Legends (stat tracker)",
+  "title": "League of Legends (Stat Tracker)",
   "exe": "League of Legends.exe",
+  "version": 1,
   "triggers": [
     {
-      "title": "KDA",
-      "id": "league-kda",
+      "title": "Kills",
+      "id": "league-kills",
       "debug": false,
       "enabled": true,
       "runForever": false,
-      "secondsBefore": 1,
-      "secondsAfter": 1,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "matchesRequired": 4,
       "cropFunction": {
         "yAnchor": "top",
         "xAnchor": "left",
@@ -38,7 +40,97 @@
       },
       "parser": {
         "type": "stat-tracker",
-        "regex": "(\\d\\d?)/(\\d\\d?)/(\\d\\d?)"
+        "regex": "(\\d\\d?)/\\d\\d?/\\d\\d?",
+        "chartOptions": {
+          "yaxis": {
+            "seriesName": "Kills"
+          }
+        },
+        "clipCondition": {
+          "when": "stat-increases-by",
+          "value": 1
+        }
+      }
+    },
+    {
+      "title": "Deaths",
+      "id": "league-deaths",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 7.5,
+      "secondsAfter": 2.5,
+      "linkedTo": "league-kills",
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d\\d?/(\\d\\d?)/\\d\\d?",
+        "chartOptions": {
+          "yaxis": {
+            "seriesName": "Kills"
+          }
+        },
+        "clipCondition": {
+          "when": "stat-increases-by",
+          "value": 1
+        }
+      }
+    },
+    {
+      "title": "Assists",
+      "id": "league-assists",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 1,
+      "secondsAfter": 1,
+      "linkedTo": "league-kills",
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d\\d?/\\d\\d?/(\\d\\d?)",
+        "chartOptions": {
+          "yaxis": {
+            "seriesName": "Kills"
+          }
+        }
+      }
+    },
+    {
+      "title": "CS",
+      "id": "league-cs",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 1,
+      "secondsAfter": 1,
+      "matchesRequired": 8,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 92.5,
+        "y": 0,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 3.0000000000000004,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 238,
+          "g": 250,
+          "b": 197,
+          "threshold": 44
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d{1,3}"
       }
     }
   ]
