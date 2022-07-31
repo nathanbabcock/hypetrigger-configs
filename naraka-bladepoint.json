@@ -1,0 +1,44 @@
+{
+  "id": "naraka-bladepoint",
+  "title": "Naraka: Bladepoint",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "naraka-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 40,
+        "y": 10,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 20,
+        "height": 18,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 247,
+          "g": 251,
+          "b": 205,
+          "threshold": 28
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[I\\]J]nvincible|first|double|triple|kill"
+      }
+    }
+  ]
+}
