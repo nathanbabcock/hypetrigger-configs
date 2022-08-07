@@ -1,6 +1,7 @@
 {
   "id": "naraka-bladepoint",
   "title": "Naraka: Bladepoint",
+  "version": 1,
   "triggers": [
     {
       "title": "Kill",
@@ -37,7 +38,45 @@
       },
       "parser": {
         "type": "regex",
-        "regex": "[I\\]J]nvincible|first|double|triple|kill"
+        "regex": "Invinesbie|Invin|Invincigle|Invs|\\]nvincigle|Jnigible|Invincible|first|Doble|double|triple|Quad|&uad|yKLL|kill"
+      }
+    },
+    {
+      "title": "Victory",
+      "id": "naraka-victory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 3,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 36,
+        "y": 12.000000000000002,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 28,
+        "height": 29.000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 247,
+          "g": 251,
+          "b": 205,
+          "threshold": 28
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Ciamntle|Cimanille|Giamndle|Cimanies|Cimandle|Caandle|Ciaandles|Cmandle|Ciamadle|Cisandles|Cimandles|GLORYISYOURS|Siamaites|Siaaies|Sigmaites|Ciamatle"
       }
     }
   ]
