@@ -1,0 +1,136 @@
+{
+  "id": "apex-legends-stat-tracker",
+  "title": "Apex Legends (Stat Tracker)",
+  "exe": "r5apex.exe",
+  "triggers": [
+    {
+      "title": "kills",
+      "id": "apex-kills",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 86.5,
+        "y": 9,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 2,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 36,
+          "g": 36,
+          "b": 36,
+          "threshold": 55
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d+",
+        "clipCondition": {
+          "when": "never",
+          "value": 0
+        }
+      },
+      "matchesRequired": 4
+    },
+    {
+      "title": "players remaining",
+      "id": "apex-players-remaining",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 91.5,
+        "y": 5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 1.4999999999999998,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%",
+        "matchesRequired": 4
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 60,
+          "g": 60,
+          "b": 60,
+          "threshold": 40
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d+",
+        "clipCondition": {
+          "when": "never",
+          "value": 0
+        }
+      }
+    },
+    {
+      "title": "revives",
+      "id": "apex-revives",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 90,
+        "y": 9,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 1.4999999999999998,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 36,
+          "g": 36,
+          "b": 36,
+          "threshold": 55
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d+",
+        "clipCondition": {
+          "when": "never",
+          "value": 0
+        }
+      },
+      "matchesRequired": 4
+    }
+  ]
+}

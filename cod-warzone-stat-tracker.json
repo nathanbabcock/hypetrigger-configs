@@ -1,0 +1,179 @@
+{
+  "id": "cod-warzone-stat-tracker",
+  "title": "Call of Duty: Warzone (Stat Tracker)",
+  "exe": "ModernWarfare.exe",
+  "triggers": [
+    {
+      "title": "kills",
+      "id": "warzone-kills",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "matchesRequired": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 94.75,
+        "y": 4.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 4.5,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 200,
+          "g": 200,
+          "b": 200,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d+",
+        "clipCondition": {
+          "when": "never",
+          "value": 0
+        }
+      }
+    },
+    {
+      "title": "players remaining",
+      "id": "warzone-players-remaining",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "matchesRequired": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 90.25,
+        "y": 4.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 2.9999999999999996,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 200,
+          "g": 200,
+          "b": 200,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d+",
+        "clipCondition": {
+          "when": "never",
+          "value": 0
+        }
+      }
+    },
+    {
+      "title": "teams remaining",
+      "id": "warzone-teams-remaining",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "matchesRequired": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 86.75,
+        "y": 4.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 2.5,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 200,
+          "g": 200,
+          "b": 200,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d+",
+        "clipCondition": {
+          "when": "never",
+          "value": 0
+        }
+      }
+    },
+    {
+      "title": "circle number",
+      "id": "warzone-circle",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "matchesRequired": 4,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 2,
+        "y": 28.000000000000004,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 2,
+        "height": 3.5555555555555554,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 40
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d+",
+        "clipCondition": {
+          "when": "never",
+          "value": 0
+        }
+      }
+    }
+  ]
+}

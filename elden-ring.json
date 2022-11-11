@@ -191,6 +191,49 @@
         "type": "regex",
         "regex": "LOST GRACE DISCOVERED"
       }
+    },
+    {
+      "title": "Runes",
+      "id": "elden-ring-runes",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 2.5,
+      "matchesRequired": 3,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 89,
+        "y": 95,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 2,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 165,
+          "g": 167,
+          "b": 164,
+          "threshold": 21
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "stat-tracker",
+        "regex": "\\d+",
+        "clipCondition": {
+          "when": "never",
+          "value": 0
+        }
+      }
     }
   ]
 }

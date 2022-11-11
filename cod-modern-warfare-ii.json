@@ -1,0 +1,500 @@
+{
+  "id": "cod-modern-warfare-ii",
+  "title": "Call of Duty: Modern Warfare II",
+  "triggers": [
+    {
+      "title": "Loading Screen",
+      "id": "mwii-loading-screen",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 0,
+      "secondsAfter": 16,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 11.7,
+        "y": 2,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 64,
+        "height": 8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 229,
+          "g": 232,
+          "b": 226,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "FARM|ALMAS|HOTEL|MUSEUM|BAY|SA'ID|FORTRESS|TARAQ|BORDER|ZARQWA|EMBASSY"
+      }
+    },
+    {
+      "title": "On Kill",
+      "id": "mwii-on-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 40,
+        "y": 82.8,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 16,
+        "height": 2.8,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 253,
+          "b": 255,
+          "threshold": 32
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "title": "On Kill (Invasion)",
+      "id": "mwii-on-kill-invasion",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 42,
+        "y": 69,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 16,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 253,
+          "b": 255,
+          "threshold": 32
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[kK][1iIlL]{1,3}"
+      }
+    },
+    {
+      "title": "Double Kill (Disable \"On Kill\" to use this)",
+      "id": "mwii-double-kill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 42,
+        "y": 21.1,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 16,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DOUBLE KILL"
+      }
+    },
+    {
+      "title": "Triple Kill (Disable \"On Kill\" to use this)",
+      "id": "mwii-triple-kill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 42,
+        "y": 21.1,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 16,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TRIPLE KILL"
+      }
+    },
+    {
+      "title": "On Stick (Disable \"On Kill\" to use this)",
+      "id": "mwii-on-stick",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 47,
+        "y": 26,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.1,
+        "height": 4,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 32
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "STUCK"
+      }
+    },
+    {
+      "title": "On Round / Victory",
+      "id": "mwii-on-round-victory",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 0,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 33,
+        "y": 42.00000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 33,
+        "height": 15,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 146,
+          "g": 144,
+          "b": 144,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "ROUND|VICTORY"
+      }
+    },
+    {
+      "title": "Scoreboard",
+      "id": "mwii-scoreboard",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 2,
+      "secondsAfter": 0,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 29.2,
+        "y": 23,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 4,
+        "height": 3,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Score"
+      }
+    },
+    {
+      "title": "Death",
+      "id": "mwii-death",
+      "debug": true,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46.5,
+        "y": 77.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 6.5,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 193,
+          "g": 84,
+          "b": 62,
+          "threshold": 8
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Killed By"
+      }
+    },
+    {
+      "title": "victory",
+      "id": "mwii-victory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 20,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 35,
+        "y": 41.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 32,
+        "height": 13.500000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "VICTORY"
+      }
+    },
+    {
+      "title": "Defeat",
+      "id": "mwii-defeat",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 2.5,
+      "secondsAfter": 20,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 35,
+        "y": 41,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 28,
+        "height": 13.500000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 20
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DEFEAT"
+      }
+    },
+    {
+      "title": "Kill Streaks!",
+      "id": "mwii-kill-streak",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 48.5,
+        "y": 25.500000000000004,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 2.9999999999999996,
+        "height": 2.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 231,
+          "g": 229,
+          "b": 228,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TO USE"
+      }
+    },
+    {
+      "title": "Multi-Kill",
+      "id": "mwii-multi-kill",
+      "debug": true,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 44,
+        "y": 23,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 13.5,
+        "height": 4,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 8
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "KILL"
+      }
+    }
+  ]
+}

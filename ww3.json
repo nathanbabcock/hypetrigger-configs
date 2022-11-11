@@ -1,0 +1,196 @@
+{
+  "id": "ww3",
+  "title": "World War 3",
+  "triggers": [
+    {
+      "title": "On Kill",
+      "id": "ww3-on-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 64,
+        "y": 52,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 16,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 144,
+          "g": 144,
+          "b": 144,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "ENEMY DOWN"
+      }
+    },
+    {
+      "title": "On Double Kill",
+      "id": "ww3-on-double-kill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 64,
+        "y": 52,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 16,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 144,
+          "g": 144,
+          "b": 144,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DOUBLE"
+      }
+    },
+    {
+      "title": "On Triple Kill",
+      "id": "ww3-on-triple-kill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 64,
+        "y": 52,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 16,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 144,
+          "g": 144,
+          "b": 144,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TRIPLE"
+      }
+    },
+    {
+      "title": "On Headshot",
+      "id": "ww3-on-headshot",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 64,
+        "y": 52,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 8,
+        "height": 16,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 144,
+          "g": 144,
+          "b": 144,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "HEADSHOT"
+      }
+    },
+    {
+      "title": "On Win",
+      "id": "ww3-on-win",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 32,
+        "y": 44,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 36,
+        "height": 11,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "WON"
+      }
+    }
+  ]
+}
