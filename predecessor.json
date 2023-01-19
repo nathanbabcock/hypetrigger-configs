@@ -1,0 +1,82 @@
+{
+  "id": "Predecessor",
+  "title": "Predecessor",
+  "triggers": [
+    {
+      "title": "Death",
+      "id": "pred-death",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 56.5,
+        "y": 20.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.5,
+        "height": 2,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 54
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "INSERT-PLAYER-OR-CHARACTER-NAME"
+      }
+    },
+    {
+      "title": "Kill",
+      "id": "pred-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 2.5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 38.5,
+        "y": 20,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.5,
+        "height": 3.0000000000000004,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "INSERT-PLAYER-OR-CHARACTER-NAME"
+      }
+    }
+  ]
+}

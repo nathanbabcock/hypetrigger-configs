@@ -1,0 +1,576 @@
+{
+  "id": "cod-warzone-2",
+  "title": "Call of Duty: Warzone 2.0",
+  "triggers": [
+    {
+      "title": "Kill",
+      "id": "wz2-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 57.99999999999999,
+        "y": 41.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10.5,
+        "height": 6.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 25
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "KILL"
+      }
+    },
+    {
+      "title": "Death",
+      "id": "wz2-death",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 31.500000000000004,
+        "y": 90.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 19,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[Kk][IiJjl1][LliI1][LliI1][Ee3][Dd]"
+      }
+    },
+    {
+      "title": "Eliminated",
+      "id": "wz2-eliminated",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 58.5,
+        "y": 43,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 202,
+          "g": 197,
+          "b": 196,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[Ee3][Ll1][Ii1][Mm][Ii1][Nn][Aa][Tt7][Ee3][Dd]"
+      }
+    },
+    {
+      "title": "Nosebreaker",
+      "id": "wz2-nosebreaker",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 58.5,
+        "y": 43,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 202,
+          "g": 197,
+          "b": 196,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[Nn][Oo0][Ss5][Ee3][Bb][Rr][Ee3][Aa][Kk][Ee3][Rr]"
+      }
+    },
+    {
+      "title": "Headshot",
+      "id": "wz2-headshot",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 58.5,
+        "y": 43,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 202,
+          "g": 197,
+          "b": 196,
+          "threshold": 15
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "HEADSHOT"
+      }
+    },
+    {
+      "title": "Victory",
+      "id": "wz2-victory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 165,
+      "secondsAfter": 15,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 20,
+        "y": 40.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 60,
+        "height": 18.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 140,
+          "g": 140,
+          "b": 140,
+          "threshold": 22
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "VICTORY"
+      }
+    },
+    {
+      "title": "Gulag Victory",
+      "id": "wz2-gulagvictory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 40,
+        "y": 42,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 20,
+        "height": 8.500000000000002,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 213,
+          "g": 255,
+          "b": 140,
+          "threshold": 32
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "GULAG VICTORY"
+      }
+    },
+    {
+      "title": "Enemy Downed",
+      "id": "wz2-enemydowned",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 8,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 71.5,
+        "y": 10.500000000000002,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 28,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 252,
+          "g": 250,
+          "b": 249,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "ENEMY"
+      }
+    },
+    {
+      "title": "Team Wipe",
+      "id": "wz2-teamwiped",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 58.5,
+        "y": 42.500000000000014,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.999999999999999,
+        "height": 6.000000000000001,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 34
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TEAM WIPED"
+      }
+    },
+    {
+      "title": "Double Kill",
+      "id": "wz2-doublekill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 58.5,
+        "y": 43,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 7.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 32
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "DOUBLE KILL"
+      }
+    },
+    {
+      "title": "Triple Kill",
+      "id": "wz2-triplekill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 58.5,
+        "y": 43,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 7.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 32
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "TRIPLE KILL"
+      }
+    },
+    {
+      "title": "Quad Kill",
+      "id": "wz2-quadkill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 58.5,
+        "y": 43,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 7.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 32
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "QUAD KILL"
+      }
+    },
+    {
+      "title": "Assisted Kill",
+      "id": "wz2-assistedkill",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 58.5,
+        "y": 42.500000000000014,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 3.5,
+        "height": 7.000000000000001,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 37
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "assist"
+      }
+    },
+    {
+      "title": "Team Chatter",
+      "id": "wz2-teamchatter",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 11.999999999999998,
+        "y": 56.500000000000014,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 18.5,
+        "height": 7.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 140,
+          "g": 140,
+          "b": 140,
+          "threshold": 22
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "POO"
+      }
+    },
+    {
+      "title": "Trigger Fail",
+      "id": "wz2-trigger-fail",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 50.49999999999999,
+        "y": 43,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10,
+        "height": 7.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 32
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "XP"
+      }
+    }
+  ]
+}
